@@ -44,3 +44,7 @@ x3 = 7.000000000000002
 ```
 
 El último resultado es una aproximación de `7` por el uso de `double`. El programa utiliza esta matriz fija, sin pedir datos por consola. Es Gauss simple y necesita pivotes distintos de cero durante el cálculo.
+
+Captura de la ejecución:
+
+![Ejecución del método de Gauss en consola](ejecucion.png)
