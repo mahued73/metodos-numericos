@@ -1,0 +1,14 @@
+Matriz aumentada inicial:
+3.0	-0.1	-0.2	7.85	
+0.1	7.0	-0.3	-19.3	
+0.3	-0.2	10.0	71.4	
+
+Matriz despues de Gauss-Jordan:
+1.0	0.0	0.0	3.0	
+0.0	1.0	0.0	-2.5	
+0.0	0.0	1.0	7.000000000000002	
+
+Soluciones del sistema:
+x1 = 3.0
+x2 = -2.5
+x3 = 7.000000000000002
