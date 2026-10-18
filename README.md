@@ -3,5 +3,7 @@
 Prácticas de Métodos Numéricos de Mauricio Ahued Cortés.
 
 - [Método de Gauss](gauss/README.md)
+- [Método de Gauss-Jordan](gauss-jordan/README.md)
+- [Jacobi y Gauss-Seidel](metodos-iterativos/README.md)
 
-Para compilar y ejecutar la práctica, abre una terminal en la carpeta `gauss` y sigue su README.
+Cada carpeta incluye sus instrucciones de compilación y ejecución.
