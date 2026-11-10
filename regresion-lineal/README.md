@@ -12,11 +12,10 @@ regresion-lineal/
 └── src/
     └── Ajuste_de_Funciones/
         ├── Main.java
-        ├── RegresionLineal.java
-        └── PruebasRegresion.java
+        └── RegresionLineal.java
 ```
 
-`Main.java` contiene los datos del ejemplo y arranca el programa. `RegresionLineal.java` acumula las sumatorias y calcula la pendiente, la ordenada al origen, `r` y `r²`. `PruebasRegresion.java` comprueba esos cálculos con distintos datos y revisa cómo responde el programa a entradas inválidas.
+`Main.java` contiene los datos del ejemplo y arranca el programa. `RegresionLineal.java` acumula las sumatorias y calcula la pendiente, la ordenada al origen, `r` y `r²`.
 
 ## Cómo clonar y ejecutar
 
@@ -29,14 +28,14 @@ Usa Git y un JDK 21 con `java` y `javac` disponibles en la terminal. El proyecto
    cd metodos-numericos/regresion-lineal
    ```
 
-2. Compila los tres fuentes y ejecuta la clase `Main`.
+2. Compila los dos fuentes y ejecuta la clase `Main`.
 
    ```powershell
-   javac -encoding UTF-8 -d out src/Ajuste_de_Funciones/Main.java src/Ajuste_de_Funciones/RegresionLineal.java src/Ajuste_de_Funciones/PruebasRegresion.java
+   javac -encoding UTF-8 -d out src/Ajuste_de_Funciones/Main.java src/Ajuste_de_Funciones/RegresionLineal.java
    java -cp out Ajuste_de_Funciones.Main
    ```
 
-En VS Code también puedes abrir la carpeta `regresion-lineal`, entrar a `src/Ajuste_de_Funciones/Main.java` y seleccionar **Run** sobre el método `main`. Los resultados aparecen en la terminal integrada.
+Si usas VS Code, abre la carpeta `regresion-lineal` y ejecuta esos mismos comandos en la terminal integrada.
 
 ## Datos y resultado esperado
 
@@ -52,14 +51,6 @@ Prediccion interpolada X=3.5: 4.3000
 ```
 
 La pendiente indica que la estimación sube 0.6 por cada unidad de `x`. El valor de `r²` indica que la recta explica el 60 % de la variación de `y` en estos cinco datos. La estimación se comprueba sustituyendo 3.5 en la recta, lo que da 2.2 + 0.6 × 3.5 = 4.3.
-
-## Ejecutar las pruebas
-
-```powershell
-java -cp out Ajuste_de_Funciones.PruebasRegresion
-```
-
-La última línea debe indicar `TOTAL: 21 casos aprobados.`
 
 ## Reporte
 
