@@ -4,6 +4,12 @@ Actividad de la Unidad 6 de Métodos Numéricos. El programa aplica Euler a
 `y' = x - y` y Runge–Kutta de cuarto orden (RK4) a `y' = x + y`.
 En ambos ejercicios, `y(0) = 1` y el cálculo termina en `x = 0.3`.
 
+## Integrantes
+
+- Mauricio Ahued Cortés
+- Fátima Itzel Martínez Salamanca
+- Aretzy Esmeralda Morales Merino
+
 ## Archivos
 
 ```text
