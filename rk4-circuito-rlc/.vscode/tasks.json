@@ -1,0 +1,57 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "RLC: compilar Java",
+      "type": "process",
+      "command": "javac",
+      "args": [
+        "-encoding",
+        "UTF-8",
+        "RK4CircuitoRLC.java"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "RLC: compilar y ejecutar",
+      "type": "process",
+      "command": "java",
+      "args": [
+        "-cp",
+        "${workspaceFolder}",
+        "RK4CircuitoRLC",
+        "${input:pasoRlc}"
+      ],
+      "dependsOn": "RLC: compilar Java",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "pasoRlc",
+      "type": "pickString",
+      "description": "Paso h, con 25 pasos de integración",
+      "options": [
+        "0.2",
+        "0.1",
+        "0.05"
+      ],
+      "default": "0.2"
+    }
+  ]
+}
