@@ -1,10 +1,10 @@
 # RK4 vectorial para un circuito RLC
 
-Práctica 6.3 de Métodos Numéricos. El programa calcula la carga y la corriente del circuito con 25 pasos de Runge-Kutta de cuarto orden, además del punto inicial. El [reporte en PDF](Reporte-RK4-Circuito-RLC.pdf) contiene la deducción, las tablas completas y la gráfica.
+En la práctica 6.3 de Métodos Numéricos calculamos cómo cambian la carga y la corriente en un circuito RLC. El programa en Java aplica 25 pasos de Runge-Kutta de cuarto orden y muestra también el punto inicial. En el [reporte en PDF](Reporte-RK4-Circuito-RLC.pdf) explicamos cómo obtuvimos el sistema de ecuaciones y comparamos los resultados con la solución exacta en las tablas y la gráfica.
 
 ## Clonar, compilar y ejecutar
 
-Con un JDK instalado, ejecuta en terminal:
+Si ya tienes instalado el JDK, abre una terminal. Los primeros comandos descargan el repositorio y te llevan a la carpeta de la práctica. Después compilas el programa y lo corres con los tres tamaños de paso:
 
 ```sh
 git clone https://github.com/mahued73/metodos-numericos.git
@@ -15,11 +15,11 @@ java RK4CircuitoRLC 0.10
 java RK4CircuitoRLC 0.05
 ```
 
-En Visual Studio Code puedes ejecutar los mismos comandos desde la terminal integrada. Sin argumento se usa un paso de 0.20 s.
+También puedes usar la terminal integrada de Visual Studio Code. Si corres el programa sin indicar el paso, usa 0.20 s.
 
 ## Salida de la corrida con h = 0.20 s
 
-Los encabezados indican iteración, tiempo en segundos, carga calculada en coulombs, corriente en amperes, carga exacta y error absoluto de la carga.
+La fila 0 muestra las condiciones iniciales. En cada fila siguiente, `n` es la iteración y `t` es el tiempo en segundos. `y1` es la carga calculada en coulombs y `y2` es la corriente en amperes. Las dos últimas columnas muestran la carga exacta y cuánto difiere de la calculada, sin importar el signo de la diferencia.
 
 ```csv
 n,t,y1,y2,q_exact,error_abs
